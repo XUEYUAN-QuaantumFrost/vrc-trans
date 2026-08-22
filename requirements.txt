@@ -1,0 +1,19 @@
+PyQt5>=5.15
+openai>=1.0
+python-osc>=1.8
+faster-whisper>=0.10
+sounddevice>=0.4
+soundfile>=0.12
+webrtcvad>=2.0
+numpy>=1.24,<2
+setuptools<80
+# TTS 语音朗读（可选）
+pyttsx3>=2.90
+edge-tts>=6.1  # 联网微软语音，音色丰富，支持指定输出设备
+websockets>=12.0  # 火山引擎（豆包）TTS WebSocket 接口
+# 可选：中文识别更准（安装较慢，约500MB）
+# funasr>=1.0
+# 可选：Sherpa-onnx 中文优化引擎（轻量，约100MB）
+sherpa-onnx>=1.10
+# 降噪（可选，实时音频降噪，效果更好；不可用时自动回退内置降噪）
+noisereduce>=3.0.0  # 3.x 兼容 NumPy 1.24+，旧版用了已移除的 np.long
